@@ -1,0 +1,85 @@
+.app {
+  .header {
+    width: 100%;
+    background-color: #eeeeee;
+    .container {
+      min-width: 500px;
+      padding: 40px 100px;
+      .title {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .con {
+    margin: 20px 100px;
+    .form {
+      .formItem {
+        label {
+          font-weight: bold;
+        }
+        input,
+        textarea {
+          width: 100%;
+          margin: 10px 0;
+          border: 1px solid #cccccc;
+          border-radius: 4px;
+          padding: 5px 0;
+          text-indent: 10px;
+          font-size: 16px;
+        }
+      }
+      .btn {
+        position: relative;
+        height: 30px;
+        button {
+          position: absolute;
+          right: 0;
+          cursor: pointer;
+          width: 80px;
+          height: 30px;
+          margin: 10px 0;
+          border: 1px solid #cccccc;
+          border-radius: 4px;
+        }
+      }
+    }
+    .commentList {
+      .commentHeader {
+        font-size: 20px;
+        // font-weight: bold;
+      }
+      .commentBody {
+        .commentItem {
+          border: 1px solid #cccccc;
+          border-radius: 4px;
+          padding: 10px 5px;
+          margin: 5px 0;
+          position: relative;
+          .commentSay {
+            font-size: 18px;
+            padding-bottom: 5px;
+          }
+          .commentBtn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            button {
+              position: absolute;
+              right: 0;
+              cursor: pointer;
+              width: 80px;
+              height: 30px;
+              border: 1px solid #cccccc;
+              border-radius: 4px;
+            }
+          }
+          .commentReply {
+            font-size: 16px;
+            padding-left: 40px;
+          }
+        }
+      }
+    }
+  }
+}

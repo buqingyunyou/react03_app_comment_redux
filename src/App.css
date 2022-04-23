@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+.app .header {
+  width: 100%;
+  background-color: #eeeeee;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app .header .container {
+  min-width: 500px;
+  padding: 40px 100px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app .header .container .title {
+  font-size: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app .con {
+  margin: 20px 100px;
 }
-
-.App-link {
-  color: #61dafb;
+.app .con .form .formItem label {
+  font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app .con .form .formItem input,
+.app .con .form .formItem textarea {
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 5px 0;
+  text-indent: 10px;
+  font-size: 16px;
+}
+.app .con .form .btn {
+  position: relative;
+  height: 30px;
+}
+.app .con .form .btn button {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  margin: 10px 0;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+.app .con .commentList .commentHeader {
+  font-size: 20px;
+}
+.app .con .commentList .commentBody .commentItem {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 10px 5px;
+  margin: 5px 0;
+  position: relative;
+}
+.app .con .commentList .commentBody .commentItem .commentSay {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+.app .con .commentList .commentBody .commentItem .commentBtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.app .con .commentList .commentBody .commentItem .commentBtn button {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+.app .con .commentList .commentBody .commentItem .commentReply {
+  font-size: 16px;
+  padding-left: 40px;
 }
