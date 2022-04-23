@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import AddComment from "./pages/AddComment";
+import CommentList from "./pages/CommentList";
 
 export default class App extends React.Component {
   render() {
@@ -15,39 +17,10 @@ export default class App extends React.Component {
         {/* 主体 */}
         <div className="con">
           {/* 评论输入 */}
-          <form className="form">
-            <div className="formItem">
-              <label>
-                用户名
-                <input type="text" id="username"></input>
-              </label>
-            </div>
-            <div className="formItem">
-              <label>
-                评论内容
-                <textarea rows="3"></textarea>
-              </label>
-            </div>
-            <div className="btn">
-              <button>提交</button>
-            </div>
-          </form>
+          <AddComment />
 
           {/* 评论展示 */}
-          <div className="commentList">
-            <div className="commentHeader">评论回复</div>
-            <div className="commentBody">
-              <ul>
-                <li className="commentItem">
-                  <div className="commentSay">丁元英说:</div>
-                  <div className="commentBtn">
-                    <button className="deleteBtn">删除</button>
-                  </div>
-                  <div className="commentReply">hello,芮小丹</div>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <CommentList />
         </div>
       </div>
     );
