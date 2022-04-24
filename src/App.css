@@ -21,9 +21,9 @@
   margin: 10px 0;
   border: 1px solid #cccccc;
   border-radius: 4px;
-  padding: 5px 0;
+  padding: 10px 0;
   text-indent: 10px;
-  font-size: 16px;
+  line-height: 18px;
 }
 .app .con .form .btn {
   position: relative;
@@ -41,6 +41,10 @@
 }
 .app .con .commentList .commentHeader {
   font-size: 20px;
+}
+.app .con .commentList .empty {
+  font-size: 30px;
+  padding: 20px 0;
 }
 .app .con .commentList .commentBody .commentItem {
   border: 1px solid #cccccc;
